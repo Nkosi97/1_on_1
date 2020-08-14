@@ -12,7 +12,7 @@ function find(str) {
   } else {
     return `There is no bomb, relax`;
   }
-} 
+}
 // console.log(find("Bomb"))
 
 function myString(str) {
@@ -39,18 +39,17 @@ function calc(l, w, h) {
 
 function convert() {
   var arr = [1, -6, 8, -4, 9, 7, -10];
-
-  for (let i = 0; arr > 0; i++) {
-  return arr[i] < 0
+  var array = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      array.push(arr[i] * -1);
+    } else if (arr[i] > 0) {
+      array.push(arr[i]);
+    }
   }
- 
-  return arr;
+  return array;
 }
-// console.log(convert());
-const numbers = [-1,-2,-3,-4,-5];
-const pos = numbers.map( v => v * -1);
-
-console.log(pos);
+console.log(convert());
 
 // function js_style()
 // {
