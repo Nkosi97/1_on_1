@@ -39,15 +39,15 @@ function calc(l, w, h) {
 
 function convert() {
   var arr = [1, -6, 8, -4, 9, 7, -10];
-  var array = [];
+  var newArray = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < 0) {
-      array.push(arr[i] * -1);
+      newArray.push(arr[i] * -1);
     } else if (arr[i] > 0) {
-      array.push(arr[i]);
+      newArray.push(arr[i]);
     }
   }
-  return array;
+  return newArray;
 }
 console.log(convert());
 
